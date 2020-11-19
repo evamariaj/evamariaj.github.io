@@ -1,0 +1,220 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+.parallax {
+	background-image: url('pic/PizzaPie.jpg');
+	height: 100px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 100vh;
+	top: 0;
+	position: sticky;
+	z-index: -1;
+}
+
+.parallax-curtain {
+	height: auto;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: #b70a0a;
+}
+
+nav li {
+	padding: 15px;
+	background-color: #b70a0a;
+	font-family: arial;
+	font-size: 20;
+	color: #FFF;
+}
+
+.style {
+	font-weight: 800;
+}
+
+p {
+	font-size: 20px;
+	font-family: arial;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h1 {
+	background-color: ;
+	font-size: 32px;
+	font-family: Ink Free;
+	color: #535353;
+	text-align: center;
+	padding-top: 20px;
+}
+
+h2 {
+	background-color: ;
+	font-size: 24px;
+	font-family: Ink Free;
+	text-align: center;
+	padding-top: 20px;
+}
+
+h2.header2meny {
+	background-color: ;
+	font-size: 24px;
+	font-family: Ink Free;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20%;
+}
+
+.padding20bottom {
+	padding-bottom: 20px;
+}
+
+form {
+	text-align: center;
+	font-family: arial;
+}
+
+.menylista {
+	list-style-type: none;
+	background-color: ;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20%;
+}
+
+section.lessmarginsection {
+	margin-top: 100px;
+}
+
+figure {
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+div figure.toplogo {
+	max-width: 100%;
+	height: auto;
+}
+
+.responsive {
+	height: auto;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+figcaption {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+article {
+	margin-top: 100px;
+}
+
+section img.rounded {
+	border-radius: 75px;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Ink Free;
+	font-size: 14px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin-top: 50px;
+}
+
+.button1 {
+	/*vill gärna att den är aligned med texten men lyckas inte!*/
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	margin-left: 20%;
+}
+
+.button1:hover {
+	background-color: black;
+	color: white;
+}
+
+.button2 {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	margin-left: none;
+	margin-ringt: none;
+}
+
+.button2:hover {
+	background-color: black;
+	color: white;
+}
+
+.center50 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menulinks {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: green;
+	text-decoration: none;
+}
+
+footer {
+	margin-bottom: 10 px;
+	background-color: #b70a0a;
+	color: #FFF;
+}
+
+nav.mobileNav {
+	display: none;
+}
+
+@media only screen and (max-width:600px) {
+	body {
+		background-color: #FFF;
+	}
+	.parallax {
+		background-attachment: scroll;
+	}
+	nav.mainNav {
+		display: none;
+	}
+	nav.mobileNav {
+		display: block;
+	}
+}
