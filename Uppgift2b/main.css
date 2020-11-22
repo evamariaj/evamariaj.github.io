@@ -75,6 +75,10 @@ a:hover {
 	text-decoration: none;
 }
 
+a:visited {
+  color: red;
+  text-decoration: none;
+
 article a:visited {
   color: red;
   text-decoration: none;
