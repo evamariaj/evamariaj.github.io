@@ -8,11 +8,12 @@ html {
 	height: 100%;
 }
 
+/*start parallax*/
+
 .parallax {
 	background-image: url('pic/PizzaPie.jpg');
-	height: 100px;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 100vh;
@@ -21,10 +22,31 @@ html {
 	z-index: -1;
 }
 
+
+
 .parallax-curtain {
 	height: auto;
+	display: block;
+	margin-top: -1200px;
 	background: rgba(255, 255, 255, 0.8);
 }
+
+.parallax-curtain2 {
+	height: auto;
+	display: block;
+	margin-top: -1200px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.parallax-curtain3 {
+	height: auto;
+	display: block;
+	margin-top: -1400px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+/*slut parallax*/
+
 
 nav ul {
 	display: flex;
@@ -44,148 +66,13 @@ nav li {
 	color: #FFF;
 }
 
-.style {
-	font-weight: 800;
-}
-
-p {
-	font-size: 20px;
-	font-family: arial;
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-h1 {
-	background-color: ;
-	font-size: 32px;
-	font-family: Ink Free;
-	color: #535353;
-	text-align: center;
-	padding-top: 20px;
-}
-
-h2 {
-	background-color: ;
-	font-size: 24px;
-	font-family: Ink Free;
-	text-align: center;
-	padding-top: 20px;
-}
-
-h2.header2meny {
-	background-color: ;
-	font-size: 24px;
-	font-family: Ink Free;
-	text-align: left;
-	padding-top: 20px;
-	padding-left: 20%;
-}
-
-.padding20bottom {
-	padding-bottom: 20px;
-}
-
-form {
-	text-align: center;
-	font-family: arial;
-}
-
-.menylista {
-	list-style-type: none;
-	background-color: ;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 20%;
-}
-
-section.lessmarginsection {
-	margin-top: 100px;
-}
-
-figure {
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 100%;
-	height: auto;
-}
-
-div figure.toplogo {
-	max-width: 100%;
-	height: auto;
-}
-
-.responsive {
-	height: auto;
-	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
-
-figcaption {
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-article {
-	margin-top: 100px;
-}
-
-section img.rounded {
-	border-radius: 75px;
-}
-
-.button {
-	border: none;
-	color: white;
-	padding: 10px 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-family: Ink Free;
-	font-size: 14px;
-	margin: 4px 2px;
-	transition-duration: 0.4s;
-	cursor: pointer;
-	margin-top: 50px;
-}
-
-.button1 {
-	/*vill gärna att den är aligned med texten men lyckas inte!*/
-	background-color: white;
-	color: black;
-	border: 2px solid black;
-	margin-left: 20%;
-}
-
-.button1:hover {
-	background-color: black;
-	color: white;
-}
-
-.button2 {
-	background-color: white;
-	color: black;
-	border: 2px solid black;
-	margin-left: none;
-	margin-ringt: none;
-}
-
-.button2:hover {
-	background-color: black;
-	color: white;
-}
-
-.center50 {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .menulinks {
 	color: #FFF;
+	text-decoration: none;
+}
+
+.links {
+	color: #red;
 	text-decoration: none;
 }
 
@@ -194,10 +81,18 @@ a:hover {
 	text-decoration: none;
 }
 
-footer {
-	margin-bottom: 10 px;
-	background-color: #b70a0a;
-	color: #FFF;
+article a:visited {
+  color: red;
+  text-decoration: none;
+}
+
+article a:hover {
+	color: green;
+	text-decoration: none;
+}
+
+div {
+	display: block;
 }
 
 nav.mobileNav {
@@ -217,4 +112,236 @@ nav.mobileNav {
 	nav.mobileNav {
 		display: block;
 	}
+}
+
+article {
+	margin-top: 100px;
+}
+
+
+figure {
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+
+.toplogo {
+	max-width: 100%;
+	height: auto;
+}
+
+.responsive {
+	height: auto;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+figcaption {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h1 {
+	background-color: ;
+	font-size: 36px;
+	font-family: Ink Free;
+	color: #535353;
+	text-align: center;
+	padding-top: 20px;
+}
+
+h2 {
+	background-color: ;
+	font-size: 28px;
+	font-family: Ink Free;
+	text-align: center;
+	padding-top: 20px;
+}
+
+h2.padding20bottom {
+	padding-bottom: 20px;
+}
+
+
+p {
+	font-size: 20px;
+	font-family: roboto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+p.redboldStyle {
+	color: red;
+	font-weight: 800;
+}
+
+ul.menylista {
+	list-style-type: none;
+	background-color: ;
+	font-family: arial;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 15%;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: Ink Free;
+	font-size: 14px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin-top: 50px;
+}
+
+.button1 {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	margin-left: 20%;
+}
+
+.button1:hover {
+	background-color: black;
+	color: white;
+}
+
+.button2 {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	margin-left: none;
+	margin-right: none;
+}
+
+.button2:hover {
+	background-color: black;
+	color: white;
+}
+
+.paddingtop30 {
+	padding-top: 30px;
+}
+
+.paddingtop100 {
+	padding-top: 100px;
+}
+
+form {
+	text-align: center;
+	font-family: roboto;
+	padding: 20px;
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-family: roboto;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+footer {
+	background-color: #b70a0a;
+	color: #FFF;
 }
