@@ -339,3 +339,19 @@ footer {
 	background-color: #b70a0a;
 	color: #FFF;
 }
+
+
+@media only screen and (max-width:600px) {
+	body {
+		background-color: #FFF;
+	}
+	.parallax {
+		background-attachment: scroll;
+	}
+	nav.mainNav {
+		display: none;
+	}
+	nav.mobileNav {
+		display: block;
+	}
+}
