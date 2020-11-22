@@ -27,12 +27,14 @@ html {
 .parallax-curtain {
 	height: auto;
 	display: block;
+	margin-top: -1000px;
 	background: rgba(255, 255, 255, 0.8);
 }
 
 .parallax-curtain2 {
 	height: auto;
 	display: block;
+	margin-top: -1200px;
 	background: rgba(255, 255, 255, 0.8);
 }
 
