@@ -75,11 +75,10 @@ a:hover {
 	text-decoration: none;
 }
 
-a:visited {
+article.links {
   color: red;
   text-decoration: none;
 }
-
 
 article a:visited {
   color: red;
