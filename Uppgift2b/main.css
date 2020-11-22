@@ -34,7 +34,7 @@ html {
 .parallax-curtain2 {
 	height: auto;
 	display: block;
-	margin-top: -1200px;
+	margin-top: -1000px;
 	background: rgba(255, 255, 255, 0.8);
 }
 
@@ -328,8 +328,14 @@ form {
   to {opacity: 1}
 }
 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
 footer {
 	background-color: #b70a0a;
 	color: #FFF;
 }
-
